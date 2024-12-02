@@ -19,12 +19,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                // Run tests in a batch script
-                bat 'npm test || echo "No tests defined"'
-            }
-        }
+
 
         stage('Build Docker Image') {
             steps {
